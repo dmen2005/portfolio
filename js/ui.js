@@ -1,11 +1,26 @@
-export function addWallText(scene, text, position, rotation) {
+export function addWallText(scene, header, body, position, rotation) {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
     canvas.width = 512;
     canvas.height = 256;
-    context.font = "80px Arial";
+    
+    const lineHeight = 40;
+    const maxLineWidth = canvas.width - 20;
+
+    if (body === "") {
+        context.font = "60px Arial";
+    } else {
+        context.font = "20px 'Courier New'";
+    }
     context.fillStyle = "black";
-    context.fillText(text, 50, 100);
+    
+    const lines = splitTextIntoLines(body || header, context, maxLineWidth);
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < lines.length; i++) {
+        context.fillText(lines[i], 10, 40 + i * lineHeight);
+    }
 
     const texture = new THREE.CanvasTexture(canvas);
     const geometry = new THREE.PlaneGeometry(20, 10);
@@ -22,14 +37,32 @@ export function addWallText(scene, text, position, rotation) {
     scene.add(textMesh);
 }
 
+function splitTextIntoLines(text, context, maxLineWidth) {
+    let lines = [];
+    let line = '';
+
+    text.split(' ').forEach(word => {
+        const testLine = line + word + ' ';
+        const testWidth = context.measureText(testLine).width;
+        if (testWidth > maxLineWidth) {
+            lines.push(line);
+            line = word + ' ';
+        } else {
+            line = testLine;
+        }
+    });
+
+    lines.push(line);
+    return lines;
+}
+
 export function addAlltext(scene) {
     console.log("Adding all text...");
-    addWallText(scene, "skils", { x: -49, y: 5, z: -5 }, { x: 0, y: Math.PI / 2, z: 0 });
-    addWallText(scene, "about me", { x: 49, y: 5, z: 5 }, { x: 0, y: -Math.PI / 2, z: 0 });
-    addWallText(scene, "1. Introduction / About Me A short bio about who you are, what you do, and what interests you.Keep it concise and engaging (1-2 short paragraphs)."
-    , { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
-    addWallText(scene, "Contact Information.", { x: 70, y: 5, z: 14 }, { x: 0, y: Math.PI, z: 0 });
-    addWallText(scene, "proj", { x: 3, y: 5, z: -49 }, { x: 0, y: 0, z: 0 });
+    addWallText(scene, "Skills", "", { x: -49, y: 4, z: -5 }, { x: 0, y: Math.PI / 2, z: 0 });
+    addWallText(scene, "About me", "", { x: 49, y: 4, z: 5 }, { x: 0, y: -Math.PI / 2, z: 0 });
+    addWallText(scene, "projects", "", { x: 3, y: 4, z: -49 }, { x: 0, y: 0, z: 0 });
+    addWallText(scene, "", "A short bio about who you are, what you do, and what interests you. Keep it concise and engaging (1-2 short paragraphs).", { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
+    addWallText(scene, "", "contact info).", { x: 64, y: 5, z: 14 }, { x: 0, y: -Math.PI / 4, z: 0 });
 }
 
 /*

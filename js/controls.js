@@ -1,6 +1,6 @@
 let yaw = 0;
 let pitch = 0;
-const speed = 0.1;
+const speed = 0.2;
 const sensitivity = 0.002;
 const keys = {};
 let player, camera;
