@@ -61,8 +61,13 @@ export function addAlltext(scene) {
     addWallText(scene, "Skills", "", { x: -49, y: 4, z: -5 }, { x: 0, y: Math.PI / 2, z: 0 });
     addWallText(scene, "About me", "", { x: 49, y: 4, z: 5 }, { x: 0, y: -Math.PI / 2, z: 0 });
     addWallText(scene, "projects", "", { x: 3, y: 4, z: -49 }, { x: 0, y: 0, z: 0 });
-    addWallText(scene, "", "A short bio about who you are, what you do, and what interests you. Keep it concise and engaging (1-2 short paragraphs).", { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
-    addWallText(scene, "", "contact info).", { x: 64, y: 5, z: 14 }, { x: 0, y: -Math.PI / 4, z: 0 });
+    addWallText(scene, "", "Hey, I'm Damian. I'm a software developer who wants to learning new things and exploring different tech. up for a challenge and curious about what's next!", { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
+    addWallText(scene, "", "contact info               drentdamian@gmail.com               linkdin.link                    github.link", { x: 59, y: 4, z: 14 }, { x: 0, y: -Math.PI / 1, z: 0 });
+    addWallText(scene, "", "Outside of coding, I’m passionate about gaming. I love exploring new games, diving into different genres, and challenging myself with relaxing gameplay.", { x: 64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
+    addWallText(scene, "", " Programming Languages                  C#          |xxxxx-----              c++         |xx--------              javascript  |xxx-------              html        |x---------", { x: -79, y: 5, z: 0 }, { x: 0, y: -Math.PI * 1.5, z: 0 });
+    addWallText(scene, "", "I work mostly with C# and Unity to build games, but I also dived into JavaScript and Three.js for this project also i did some basic stuf with html and C++.", { x: -64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
+    addWallText(scene, "", "Tools & Framework                   unity                                three.js                               git                                   node", { x: -64, y: 4, z: 14 }, { x: 0, y: -Math.PI /1, z: 0 });
+
 }
 
 /*

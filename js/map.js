@@ -23,10 +23,13 @@ export function createWalls(scene) {
     const wall2Material = new THREE.MeshStandardMaterial({ color: 0x5D3A9B });
     const wall3Material = new THREE.MeshStandardMaterial({ color: 0x800020 });
     const wall4Material = new THREE.MeshStandardMaterial({ color: 0x2C6B49 });
+    const wall5Material = new THREE.MeshStandardMaterial({ color: 0x204D8C });
+
 
 
     const wall1Geometry = new THREE.BoxGeometry(100, 10, 1);
     const wall2Geometry = new THREE.BoxGeometry(50, 10, 1);
+    const geometry = new THREE.CylinderGeometry(10, 10, 10, 32); 
 
 
     const wall1 = new THREE.Mesh(wall1Geometry, wall1Material); 
@@ -40,6 +43,12 @@ export function createWalls(scene) {
     const wall3 = new THREE.Mesh(wall1Geometry, wall1Material); 
     wall3.position.set(0, 8, -50);
     scene.add(wall3);
+
+    const circle = new THREE.Mesh(geometry, wall5Material);
+    circle.position.set(0, 5, -75);
+    circle.rotation.x = -Math.PI / 1; 
+    scene.add(circle);
+
 
     const wall4 = new THREE.Mesh(wall1Geometry, wall2Material); 
     wall4.position.set(50, 5, -53);
