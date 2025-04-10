@@ -32,7 +32,7 @@ export function addVideoScreen(scene, videoSrc, position, rotation) {
 }
 
 export function addAllScreens(scene) {
-    addVideoScreen(scene, 'https://dmen2005.github.io/portfolio/video/platformer.mp4', { x: 10, y: 5, z: -56 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
+    addVideoScreen(scene, 'video/platformer.mp4', { x: 10, y: 5, z: -56 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
     addVideoScreen(scene, 'video/RapidRush.mp4', { x:  30, y: 5, z: -76 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
     addVideoScreen(scene, 'video/blackjack.mp4', { x:  50, y: 5, z: -96 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
 
