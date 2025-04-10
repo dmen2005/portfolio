@@ -28,8 +28,10 @@ export function createWalls(scene) {
 
 
     const wall1Geometry = new THREE.BoxGeometry(100, 10, 1);
-    const wall2Geometry = new THREE.BoxGeometry(50, 10, 1);
-    const geometry = new THREE.CylinderGeometry(10, 10, 10, 32); 
+    const wall2Geometry = new THREE.BoxGeometry(150, 10, 1);
+    const wall3Geometry = new THREE.BoxGeometry(50, 10, 1);
+
+    const geometry = new THREE.CylinderGeometry(15, 15, 15, 50); 
 
 
     const wall1 = new THREE.Mesh(wall1Geometry, wall1Material); 
@@ -45,13 +47,13 @@ export function createWalls(scene) {
     scene.add(wall3);
 
     const circle = new THREE.Mesh(geometry, wall5Material);
-    circle.position.set(0, 5, -75);
+    circle.position.set(0, 5, -85);
     circle.rotation.x = -Math.PI / 1; 
     scene.add(circle);
 
 
-    const wall4 = new THREE.Mesh(wall1Geometry, wall2Material); 
-    wall4.position.set(50, 5, -53);
+    const wall4 = new THREE.Mesh(wall3Geometry, wall2Material); 
+    wall4.position.set(50, 5, -28);
     wall4.rotation.y = Math.PI / 2;
     scene.add(wall4);
 
@@ -65,8 +67,8 @@ export function createWalls(scene) {
     wall6.rotation.y = Math.PI / 2;
     scene.add(wall6);
 
-    const wall7 = new THREE.Mesh(wall1Geometry, wall3Material); 
-    wall7.position.set(-50, 5, -53);
+    const wall7 = new THREE.Mesh(wall3Geometry, wall3Material); 
+    wall7.position.set(-50, 5, -28);
     wall7.rotation.y = Math.PI / 2;
     scene.add(wall7);
 
@@ -85,8 +87,8 @@ export function createWalls(scene) {
     scene.add(wall10);
 
     //room1
-    const wall11 = new THREE.Mesh(wall1Geometry, wall1Material); 
-    wall11.position.set(0, 5, -95);
+    const wall11 = new THREE.Mesh(wall2Geometry, wall1Material); 
+    wall11.position.set(0, 5, -115);
     scene.add(wall11);
 
     const wall12 = new THREE.Mesh(wall1Geometry, wall1Material); 
@@ -126,6 +128,5 @@ export function createWalls(scene) {
     const wall19 = new THREE.Mesh(wall1Geometry, wall3Material); 
     wall19.position.set(-100, 5, -15);
     scene.add(wall19)
-
 
 }

@@ -1,8 +1,12 @@
-
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js';
 import { setupControls, updateControls } from './controls.js';
 import { createMap,  } from './map.js';
 import { addAlltext } from './ui.js';
-import { addVideoScreen } from './video.js';
+import { addAllScreens, addVideoScreen } from './video.js';
+
+
+
+
 
 
 const scene = new THREE.Scene();
@@ -18,7 +22,8 @@ player.position.set(0, 1, 0);
 scene.add(player);
 
 addVideoScreen(scene);
-addAlltext(scene)
+addAllScreens(scene);
+addAlltext(scene);
 createMap(scene);
 setupControls(player, camera);
 

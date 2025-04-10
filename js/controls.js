@@ -42,6 +42,20 @@ export function setupControls(p, cam) {
             pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
         }
     });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'm') {
+            window.open('mailto:drentdamian@gmail.com', '_blank');
+        }
+    
+        if (event.key === 'l') {
+            window.open('https://www.linkedin.com/in/damian-drent-6106982a2/', '_blank');
+        }
+    
+        if (event.key === 'g') {
+            window.open('https://github.com/dmen2005', '_blank');
+        }
+    });
 }
 
 export function updateControls() {

@@ -62,55 +62,31 @@ export function addAlltext(scene) {
     addWallText(scene, "About me", "", { x: 49, y: 4, z: 5 }, { x: 0, y: -Math.PI / 2, z: 0 });
     addWallText(scene, "projects", "", { x: 3, y: 4, z: -49 }, { x: 0, y: 0, z: 0 });
     addWallText(scene, "", "Hey, I'm Damian. I'm a software developer who wants to learning new things and exploring different tech. up for a challenge and curious about what's next!", { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
-    addWallText(scene, "", "contact info               drentdamian@gmail.com               linkdin.link                    github.link", { x: 59, y: 4, z: 14 }, { x: 0, y: -Math.PI / 1, z: 0 });
+    addWallText(scene, "", "contact info               drentdamian@gmail.com  press M          linkdin press L                       github press G", { x: 59, y: 4, z: 14 }, { x: 0, y: -Math.PI / 1, z: 0 });
     addWallText(scene, "", "Outside of coding, I’m passionate about gaming. I love exploring new games, diving into different genres, and challenging myself with relaxing gameplay.", { x: 64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
     addWallText(scene, "", " Programming Languages                  C#          |xxxxx-----              c++         |xx--------              javascript  |xxx-------              html        |x---------", { x: -79, y: 5, z: 0 }, { x: 0, y: -Math.PI * 1.5, z: 0 });
     addWallText(scene, "", "I work mostly with C# and Unity to build games, but I also dived into JavaScript and Three.js for this project also i did some basic stuf with html and C++.", { x: -64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
     addWallText(scene, "", "Tools & Framework                   unity                                three.js                               git                                   node", { x: -64, y: 4, z: 14 }, { x: 0, y: -Math.PI /1, z: 0 });
 
-}
 
-/*
-1. Introduction / About Me
-A short bio about who you are, what you do, and what interests you.
-Keep it concise and engaging (1-2 short paragraphs).
-Example:
-"I'm a passionate developer with experience in C#, JavaScript, and game development. I enjoy building interactive applications, solving complex problems, and learning new technologies."
-2. Skills
-List the languages, tools, and frameworks you're proficient in.
-Consider grouping them into categories:
-Programming Languages: C#, JavaScript, Python, SQL
-Frameworks / Libraries: .NET, Three.js, Unity, React
-Tools: Visual Studio Code, Git, MySQL
-Other: Game development, Algorithms, Problem-solving
-3. Projects (Most Important Part!)
-Showcase 3-5 of your best projects, including:
-✅ Project Name & Short Description
-✅ Technologies Used
-✅ Screenshots / GIFs
-✅ Link to GitHub repo or a live demo (if available)
-✅ A short explanation of challenges & how you solved them
+    //vid
+    addWallText(scene, "", "SlimeAtk: My first                project. I was playing a                parkour game with a                  grappling hook and wanted               to make something similar,           but with enemies to fight.", { x: 17, y: 5, z: -63 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
 
-Example: Roulette Game (C# Console)
-"A terminal-based Roulette game where players can place bets, spin the wheel, and manage their balance."
-Tech Used: C#, .NET, OOP
-[GitHub Link] | [Screenshots]
-
-4. Experience / Work (If Any)
-If you've done internships, freelance work, or even open-source contributions, include them.
-
-Company Name (or just Freelance / Open Source)
-What you worked on
-Technologies used
-5. Contact Information
-Make it easy to reach you!
-✅ Email
-✅ GitHub / GitLab
-✅ LinkedIn (if you use it)
-✅ Portfolio site (if applicable)
-
-Bonus (If You Want to Stand Out!)
-Blog / Articles (if you write about programming)
-Testimonials / Recommendations (if you have them)
-A "Fun" Section (hobbies, game jams, personal interests)
-*/
+    addWallText(scene, "", "RapidRush: My second              project — a racing game.                I learned how to use                  wheel colliders and                    improve my AI.", { x: 37, y: 5, z: -83 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
+    
+    addWallText(scene, "", "Blackjack: My first               bigger assignment using                 OOP. It helped me learn              the basics and I was            really happy with how it turned               out.", { x: 57, y: 5, z: -103 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
+    
+    addWallText(scene, "", "Something else (tbd)", { x: -53, y: 5, z: -99 }, { x: 0, y: 5 * Math.PI / -4, z: 0 });
+    
+    addWallText(scene, "", "DDNet-Client: An                  open-source game.                       I wanted to make my own                client with                             unique features.", { x: -33, y: 5, z: -79 }, { x: 0, y: 5 * Math.PI / -4, z: 0 });
+    
+    addWallText(scene, "", "ZombsAtk: A project I             started at home and                     later used for a school                assignment. I applied OOP               principles and really               improved them through this.", { x: -13, y: 5, z: -59 }, { x: 0, y: 5 * Math.PI / -4, z: 0 });
+    
+    addWallText(scene, "", "Roulette: A C# OOP                assignment. I really                    enjoyed making it and it               helped me learn a lot                   about object-oriented                   programming.", { x: 45, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    
+    addWallText(scene, "", "DeepDive Race: A racing           game I made with 4 others.", { x: 15, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    
+    addWallText(scene, "", "DeepDive Story A                 story-driven game                     made with a team of 4.                  It won                               'Best Fit in Theme'                     (there talking video muted)", { x: -15, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    
+    addWallText(scene, "", "DeepDive Drunk: A VR                 game about working and                  driving drunk. It won                  'Class Favorite Game'.", { x: -45, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    }
