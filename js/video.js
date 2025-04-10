@@ -42,8 +42,8 @@ export function addAllScreens(scene) {
 
 
     addVideoScreen(scene, 'video/roulet.mp4', { x:  55, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
-    addVideoScreen(scene, 'video/comingsoon.mp4', { x: 25, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
-    addVideoScreen(scene, 'video/comingsoon.mp4', { x: -5, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    addVideoScreen(scene, 'video/race.mp4', { x: 25, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    addVideoScreen(scene, 'video/story.mp4', { x: -5, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
     addVideoScreen(scene, 'video/comingsoon.mp4', { x:  -35, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
 
 
