@@ -37,8 +37,6 @@ export function setupControls(p, cam) {
             pitch -= event.movementY * sensitivity;
 
             //incase it breaks again
-            console.log(`Yaw: ${yaw.toFixed(2)}, Pitch: ${pitch.toFixed(2)}`);
-
             pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
         }
     });
