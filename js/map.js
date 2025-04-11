@@ -9,7 +9,7 @@ export function createMap(scene) {
     ground.rotation.x = -Math.PI / 2;
     scene.add(ground);
     
-    const roofMaterial = new THREE.MeshStandardMaterial({ color: 0x333333 });
+    const roofMaterial = new THREE.MeshStandardMaterial({ color: 0xAA0000});
     const roofGeometry = new THREE.BoxGeometry(1000, 1, 1000);
     const roof = new THREE.Mesh(roofGeometry, roofMaterial);
     roof.position.set(0,20,0);
