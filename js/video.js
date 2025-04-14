@@ -36,7 +36,7 @@ export function addAllScreens(scene) {
     addVideoScreen(scene, 'video/RapidRush.mp4', { x:  30, y: 5, z: -76 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
     addVideoScreen(scene, 'video/blackjack.mp4', { x:  50, y: 5, z: -96 }, { x: 0, y: 5 *Math.PI / 4, z: 0 });
 
-    addVideoScreen(scene, 'video/comingsoon.mp4', { x:  -20, y: 5, z: -66 }, { x: 0, y: 5 *Math.PI / -4, z: 0 });
+    addVideoScreen(scene, 'video/ddnet.mp4', { x:  -20, y: 5, z: -66 }, { x: 0, y: 5 *Math.PI / -4, z: 0 });
     addVideoScreen(scene, 'video/comingsoon.mp4', { x:  -40, y: 5, z: -86 }, { x: 0, y: 5 *Math.PI / -4, z: 0 });
     addVideoScreen(scene, 'video/comingsoon.mp4', { x:  -60, y: 5, z: -106 }, { x: 0, y: 5 *Math.PI / -4, z: 0 });
 
