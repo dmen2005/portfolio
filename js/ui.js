@@ -62,7 +62,7 @@ export function addAlltext(scene) {
     addWallText(scene, "About me", "", { x: 49, y: 4, z: 5 }, { x: 0, y: -Math.PI / 2, z: 0 });
     addWallText(scene, "projects", "", { x: 3, y: 4, z: -49 }, { x: 0, y: 0, z: 0 });
     addWallText(scene, "", "Hey, I'm Damian. I'm a software developer who wants to learning new things and exploring different tech. up for a challenge and curious about what's next!", { x: 79, y: 5, z: 0 }, { x: 0, y: -Math.PI / 2, z: 0 });
-    addWallText(scene, "", "contact info               drentdamian@gmail.com  press M          linkdin press L                       github press G", { x: 59, y: 4, z: 14 }, { x: 0, y: -Math.PI / 1, z: 0 });
+    addWallText(scene, "", "contact info               drentdamian@gmail.com  press M          linkdin press L                       github press G                         cv press c", { x: 59, y: 4, z: 14 }, { x: 0, y: -Math.PI / 1, z: 0 });
     addWallText(scene, "", "Outside of coding, I’m passionate about gaming. I love exploring new games, diving into different genres, and challenging myself with relaxing gameplay.", { x: 64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
     addWallText(scene, "", " Programming Languages                  C#          |xxxxx-----              c++         |xx--------              javascript  |xxx-------              html        |x---------", { x: -79, y: 5, z: 0 }, { x: 0, y: -Math.PI * 1.5, z: 0 });
     addWallText(scene, "", "I work mostly with C# and Unity to build games, but I also dived into JavaScript and Three.js for this project also i did some basic stuf with html and C++.", { x: -64, y: 4, z: -14 }, { x: 0, y: -Math.PI * 2, z: 0 });
@@ -84,7 +84,7 @@ export function addAlltext(scene) {
     
     addWallText(scene, "", "Roulette: A C# OOP                assignment. I really                    enjoyed making it and it               helped me learn a lot                   about object-oriented                   programming.", { x: 45, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
     
-    addWallText(scene, "", "DeepDive Race: A racing           game I made with 4 others.", { x: 15, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
+    addWallText(scene, "", "DeepDive Race:                    in deepdives we get                     1 week to make a game or               project in a group about                4 pp big, in this one                 we made a racing game.", { x: 15, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
     
     addWallText(scene, "", "DeepDive Story A                 story-driven game                     made with a team of 4.                  It won                               'Best Fit in Theme'                     (there talking video muted)", { x: -15, y: 5, z: -114 }, { x: 0, y: 0, z: 0 });
     

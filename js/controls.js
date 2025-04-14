@@ -36,7 +36,6 @@ export function setupControls(p, cam) {
             yaw -= event.movementX * sensitivity;
             pitch -= event.movementY * sensitivity;
 
-            //incase it breaks again
             pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
         }
     });
@@ -52,6 +51,10 @@ export function setupControls(p, cam) {
     
         if (event.key === 'g') {
             window.open('https://github.com/dmen2005', '_blank');
+        }
+
+        if (event.key === 'c') {
+            window.open('assets/cv.pdf', '_blank');
         }
     });
 }
